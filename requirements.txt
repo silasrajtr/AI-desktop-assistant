@@ -3,5 +3,6 @@ langchain-core
 langchain-ollama
 langgraph
 wmi
+IPython
 pywin32 # Required for pythoncom and wmi
 Pillow # For PIL (ImageGrab)
