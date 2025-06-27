@@ -54,7 +54,7 @@ To get this AI Desktop Assistant up and running on your local machine, follow th
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/silasrajtr/AI-desktop-assistant.git
-    cd AI-desktop-asistant
+    cd AI-desktop-assistant
     ```
 
 2.  **Create and activate a virtual environment (recommended):**
