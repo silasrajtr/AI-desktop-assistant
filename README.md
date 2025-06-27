@@ -47,9 +47,9 @@ To get this AI Desktop Assistant up and running on your local machine, follow th
 * **Ollama**: This project uses `llama3.2:latest` locally. You need to install Ollama and pull the model.
     1.  Download and install Ollama from [ollama.com](https://ollama.com/).
     2.  Open your terminal/command prompt and pull the `llama3.2:latest` model:
-        ```bash
-        ollama run llama3.2
-        ```
+     ```bash
+     ollama run llama3.2
+     ```
 
 ### Installation Steps
 
