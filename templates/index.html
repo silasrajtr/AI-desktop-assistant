@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            padding: 20px;
+        }
+        .chat-box {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .message {
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-radius: 16px;
+            max-width: 80%;
+        }
+        .user {
+            background: #d1e7ff;
+            align-self: flex-end;
+            margin-left: auto;
+        }
+        .assistant {
+            background: #e4e4e4;
+            align-self: flex-start;
+            margin-right: auto;
+        }
+        .chat {
+            display: flex;
+            flex-direction: column;
+        }
+        form {
+            display: flex;
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        .clear-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .download-link {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-box">
+        <h2>Laptop Assistant</h2>
+
+        <div class="chat">
+            {% for message in chat_history %}
+                <div class="message {{ message.role }}">
+                    {{ message.text }}
+                    {% if message.text == "screenshot saved" and screenshot_file %}
+                        <div class="download-link">
+                            <a href="{{ url_for('download', filename=screenshot_file) }}">📥 Download Screenshot</a>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+
+        <form method="post">
+            <input type="text" name="command" placeholder="Type your message..." required>
+            <button type="submit">Send</button>
+        </form>
+
+        <div class="clear-link">
+            <a href="{{ url_for('clear') }}">🗑️ Clear chat</a>
+        </div>
+    </div>
+
+</body>
+</html>
