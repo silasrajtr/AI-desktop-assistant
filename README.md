@@ -5,34 +5,37 @@ This project implements a desktop chatbot capable of understanding natural langu
 ## Objective
 
 The primary objective of this project is to create a fully offline desktop chatbot that can:
-* [cite_start]Run entirely without cloud APIs[cite: 1].
-* [cite_start]Utilize a local LLM (specifically designed to run without GPU dependencies)[cite: 2].
-* [cite_start]Interpret natural language commands for system interactions[cite: 3].
-* [cite_start]Execute predefined system actions (brightness control, screenshot capture)[cite: 4].
-* [cite_start]Leverage LangChain/LangGraph for robust AI agent workflows[cite: 4].
+* Run entirely without cloud APIs[cite: 1].
+* Utilize a local LLM (specifically designed to run without GPU dependencies)[cite: 2].
+* Interpret natural language commands for system interactions[cite: 3].
+* Execute predefined system actions (brightness control, screenshot capture)[cite: 4].
+* Leverage LangChain/LangGraph for robust AI agent workflows[cite: 4].
 
 ## Features
 
-* [cite_start]**Local LLM Integration**: Uses `llama3.2:latest` (via Ollama) for natural language understanding and command processing, ensuring offline capability[cite: 2, 5, 9].
+* **Local LLM Integration**: Uses `llama3.2:latest` (via Ollama) for natural language understanding and command processing, ensuring offline capability[cite: 2, 5, 9].
 * **System Control Functions**:
-    * [cite_start]Adjusts screen brightness (Windows compatible)[cite: 6].
-    * [cite_start]Takes screenshots and saves them locally with a timestamp[cite: 6].
-* [cite_start]**LangChain/LangGraph Agent**: An intelligent agent orchestrates the interaction between the LLM and system tools, deciding which tool to call based on user input[cite: 7].
-* [cite_start]**Web-based Chat Interface**: A simple and intuitive chat interface built with Flask allows users to interact with the assistant via a web browser[cite: 7].
+    * Adjusts screen brightness (Windows compatible)[cite: 6].
+    * Takes screenshots and saves them locally with a timestamp[cite: 6].
+* **LangChain/LangGraph Agent**: An intelligent agent orchestrates the interaction between the LLM and system tools, deciding which tool to call based on user input[cite: 7].
+* **Web-based Chat Interface**: A simple and intuitive chat interface built with Flask allows users to interact with the assistant via a web browser[cite: 7].
 
 ## Supported Commands
 
-[cite_start]The chatbot is designed to process natural language queries [cite: 5] and respond to the following types of commands:
+The chatbot is designed to process natural language queries [cite: 5] and respond to the following types of commands:
 
 * **Brightness Control:**
-    * [cite_start]"Please increase my brightness" [cite: 5] (increases by 10% by default)
+    * "Please increase my brightness"  (increases by 10% by default)
     * "Increase brightness by 20" (increases by a specified amount)
-    * [cite_start]"Please decrease my brightness" [cite: 5] (decreases by 10% by default)
+    * "Please decrease my brightness"  (decreases by 10% by default)
     * "Decrease brightness by 5" (decreases by a specified amount)
 * **Screenshot:**
-    * [cite_start]"Please take a screen shot" [cite: 5]
+    * "Please take a screen shot" 
     * "Take a screenshot"
+* **Mixed:**
+    * "Increase the brightness and take a screenshot" 
 
+     
 ## Setup Instructions
 
 To get this AI Desktop Assistant up and running on your local machine, follow these steps:
