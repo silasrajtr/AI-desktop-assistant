@@ -57,28 +57,19 @@ To get this AI Desktop Assistant up and running on your local machine, follow th
     cd AI-desktop-assistant
     ```
 
-2.  **Create and activate a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    # On Windows:
-    .\venv\Scripts\activate
-    # On macOS/Linux:
-    source venv/bin/activate
-    ```
-
-3.  **Install dependencies:**
+2.  **Install dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
     This will install Flask, LangChain, WMI, Pillow, and other necessary libraries.
 
-4.  **Run the Flask application:**
+3.  **Run the Flask application:**
     ```bash
     python app.py
     ```
     The application will typically run on `http://127.0.0.1:5000/`.
 
-5.  **Access the Chatbot:**
+4.  **Access the Chatbot:**
     Open your web browser and navigate to `http://127.0.0.1:5000/`.
 
 ## Project Structure
