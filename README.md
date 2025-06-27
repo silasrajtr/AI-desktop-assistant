@@ -32,8 +32,6 @@ The chatbot is designed to process natural language queries [cite: 5] and respon
 * **Screenshot:**
     * "Please take a screen shot" 
     * "Take a screenshot"
-* **Mixed:**
-    * "Increase the brightness and take a screenshot" 
 
      
 ## Setup Instructions
