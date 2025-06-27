@@ -1,6 +1,6 @@
 # AI Desktop Assistant
 
-This project implements a desktop chatbot capable of understanding natural language commands to perform system actions like adjusting screen brightness and taking screenshots. [cite_start]It is built using Python, Flask for the web interface, and LangChain/LangGraph for the AI agent workflow, powered by a local Large Language Model[cite: 1].
+This project implements a desktop chatbot capable of understanding natural language commands to perform system actions like adjusting screen brightness and taking screenshots. It is built using Python, Flask for the web interface, and LangChain/LangGraph for the AI agent workflow, powered by a local Large Language Model.
 
 ## Objective
 
@@ -22,7 +22,7 @@ The primary objective of this project is to create a fully offline desktop chatb
 
 ## Supported Commands
 
-The chatbot is designed to process natural language queries [cite: 5] and respond to the following types of commands:
+The chatbot is designed to process natural language queries and respond to the following types of commands:
 
 * **Brightness Control:**
     * "Please increase my brightness"  (increases by 10% by default)
