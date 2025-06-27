@@ -5,20 +5,20 @@ This project implements a desktop chatbot capable of understanding natural langu
 ## Objective
 
 The primary objective of this project is to create a fully offline desktop chatbot that can:
-* Run entirely without cloud APIs[cite: 1].
-* Utilize a local LLM (specifically designed to run without GPU dependencies)[cite: 2].
-* Interpret natural language commands for system interactions[cite: 3].
-* Execute predefined system actions (brightness control, screenshot capture)[cite: 4].
-* Leverage LangChain/LangGraph for robust AI agent workflows[cite: 4].
+* Run entirely without cloud APIs.
+* Utilize a local LLM (specifically designed to run without GPU dependencies).
+* Interpret natural language commands for system interactions.
+* Execute predefined system actions (brightness control, screenshot capture).
+* Leverage LangChain/LangGraph for robust AI agent workflows.
 
 ## Features
 
-* **Local LLM Integration**: Uses `llama3.2:latest` (via Ollama) for natural language understanding and command processing, ensuring offline capability[cite: 2, 5, 9].
+* **Local LLM Integration**: Uses `llama3.2:latest` (via Ollama) for natural language understanding and command processing, ensuring offline capability.
 * **System Control Functions**:
-    * Adjusts screen brightness (Windows compatible)[cite: 6].
-    * Takes screenshots and saves them locally with a timestamp[cite: 6].
-* **LangChain/LangGraph Agent**: An intelligent agent orchestrates the interaction between the LLM and system tools, deciding which tool to call based on user input[cite: 7].
-* **Web-based Chat Interface**: A simple and intuitive chat interface built with Flask allows users to interact with the assistant via a web browser[cite: 7].
+    * Adjusts screen brightness (Windows compatible).
+    * Takes screenshots and saves them locally with a timestamp.
+* **LangChain/LangGraph Agent**: An intelligent agent orchestrates the interaction between the LLM and system tools, deciding which tool to call based on user input.
+* **Web-based Chat Interface**: A simple and intuitive chat interface built with Flask allows users to interact with the assistant via a web browser.
 
 ## Supported Commands
 
